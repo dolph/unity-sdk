@@ -37,7 +37,7 @@ https://github.com/watson-developer-cloud/unity-sdk
 ## Before you begin
 Ensure that you have the following prerequisites:
 
-* An IBM Bluemix account. If you don't have one, [sign up][bluemix_registration].
+* An IBM Cloud account. If you don't have one, [sign up][bluemix_registration].
 * [Unity][get_unity]. You win! You can use the **free** Personal edition.
 * Change the build settings in Unity (**File > Build Settings**) to any platform except for web player. The Watson Developer Cloud Unity SDK does not support Unity Web Player.
 
@@ -48,12 +48,12 @@ You can get the latest SDK release by clicking [here][latest_release].
 Move the **`unity-sdk`** directory into the Assets directory of the Unity project. **Rename the SDK directory from `unity-sdk` to `Watson`.**
 
 ## Configuring your service credentials
-You will need the 'username' and 'password' credentials for each service. Service credentials are different from your Bluemix account username and password.
+You will need the 'username' and 'password' credentials for each service. Service credentials are different from your IBM Cloud account username and password.
 
 1. Determine which services to configure.
 2. If you have configured the services already, complete the following steps. Otherwise, go to step 3.
-    1. Log in to Bluemix at https://bluemix.net.
-    2. Navigate to the **Dashboard** on your Bluemix account.
+    1. Log in to IBM Cloud at https://bluemix.net.
+    2. Navigate to the **Dashboard** on your IBM Cloud account.
     3. Click the **tile** for a service.
     4. Click **Service Credentials**. Note: If your browser window is too narrow, the service options may be collapsed. Click on the upward facing double arrow next to "Back to Dashboard..." on the upper left to expand the sidebar.
     5. Copy the content in the **Service Credentials** field, and paste it in the credentials field in the Config Editor (**Watson -> Config Editor**) in Unity.
