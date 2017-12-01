@@ -1004,7 +1004,7 @@ namespace WebSocketSharp
     private HttpRequest createHandshakeRequest ()
     {
       var ret = HttpRequest.CreateWebSocketRequest (_uri);
-      
+
       if ( Headers != null )
       {
            foreach( var kp in Headers )
@@ -1125,7 +1125,7 @@ namespace WebSocketSharp
       var code = exception is WebSocketException
                  ? ((WebSocketException) exception).Code
                  : CloseStatusCode.Abnormal;
-      
+
         if(exception != null)
             fatal (message + exception.Message + exception.StackTrace, code);
         else

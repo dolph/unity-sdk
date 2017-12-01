@@ -78,7 +78,7 @@ namespace IBM.Watson.DeveloperCloud.Widgets
     private Dictionary<string, List<string>> m_LanguageToTranslate = new Dictionary<string, List<string>>();
     // array of availablel languages;
     private string[] m_Languages = null;
-    // Last string of input text    
+    // Last string of input text
     private string m_TranslateText = string.Empty;
     #endregion
 

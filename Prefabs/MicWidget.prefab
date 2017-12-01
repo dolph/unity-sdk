@@ -112,22 +112,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 131721b15c8a68d438d5b7163a1c05df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_AutoConnect: 1
   m_ActivateOnStart: 1
   m_AudioOutput:
     m_TargetObject: {fileID: 0}
-    m_TargetConnection: 
+    m_TargetConnection:
   m_LevelOutput:
     m_TargetObject: {fileID: 0}
-    m_TargetConnection: 
+    m_TargetConnection:
   m_ActivateOutput:
     m_TargetObject: {fileID: 0}
-    m_TargetConnection: 
+    m_TargetConnection:
   m_RecordingBufferSize: 2
   m_RecordingHZ: 16000
-  m_MicrophoneID: 
+  m_MicrophoneID:
   m_LevelOutputInterval: 0.05
   m_LevelOutputModifier: 16
   m_PlaybackRecording: 0
@@ -145,11 +145,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LevelOutput.m_TargetConnection
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_AudioOutput.m_TargetConnection
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_PlaybackRecording

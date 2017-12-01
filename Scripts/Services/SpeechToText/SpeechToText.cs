@@ -49,7 +49,7 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
     private const float WS_KEEP_ALIVE_TIME = 20.0f;
     /// <summary>
     /// If no listen state is received after start is sent within this time, we will timeout
-    /// and stop listening. 
+    /// and stop listening.
     /// </summary>
     private const float LISTEN_TIMEOUT = 10.0f;
     /// <summary>
@@ -81,8 +81,8 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
     #endregion
 
     #region Private Data
-    private OnRecognize m_ListenCallback = null;        // Callback is set by StartListening()                                                             
-    private WSConnector m_ListenSocket = null;          // WebSocket object used when StartListening() is invoked  
+    private OnRecognize m_ListenCallback = null;        // Callback is set by StartListening()
+    private WSConnector m_ListenSocket = null;          // WebSocket object used when StartListening() is invoked
     private bool m_ListenActive = false;
     private bool m_AudioSent = false;
     private bool m_IsListening = false;
@@ -145,7 +145,7 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
     /// </summary>
     public bool EnableContinousRecognition { get; set; }
     /// <summary>
-    /// If true, then we will get interim results while recognizing. The user will then need to check 
+    /// If true, then we will get interim results while recognizing. The user will then need to check
     /// the Final flag on the results.
     /// </summary>
     public bool EnableInterimResults { get; set; }
@@ -169,7 +169,7 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
     public delegate void OnGetModels(Model[] models);
 
     /// <summary>
-    /// This function retrieves all the language models that the user may use by setting the RecognizeModel 
+    /// This function retrieves all the language models that the user may use by setting the RecognizeModel
     /// public property.
     /// </summary>
     /// <param name="callback">This callback is invoked with an array of all available models. The callback will
@@ -338,7 +338,7 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
 
     /// <summary>
     /// This starts the service listening and it will invoke the callback for any recognized speech.
-    /// OnListen() must be called by the user to queue audio data to send to the service. 
+    /// OnListen() must be called by the user to queue audio data to send to the service.
     /// StopListening() should be called when you want to stop listening.
     /// </summary>
     /// <param name="callback">All recognize results are passed to this callback.</param>
@@ -1392,7 +1392,7 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
     /// Use the following guidelines to prepare a corpus text file:
     /// - Provide a plain text file that is encoded in UTF-8 if it contains non-ASCII characters.The service assumes UTF-8 encoding if it encounters such characters.
     /// - Include each sentence of the corpus on its own line, terminating each line with a carriage return. Including multiple sentences on the same line can degrade accuracy.
-    /// - Use consistent capitalization for words in the corpus. The words resource is case-sensitive; mix upper- and lowercase letters and use capitalization only when intended. 
+    /// - Use consistent capitalization for words in the corpus. The words resource is case-sensitive; mix upper- and lowercase letters and use capitalization only when intended.
     /// - Beware of typographical errors.The service assumes that typos are new words; unless you correct them before training the model, the service adds them to the model's vocabulary.
     /// The service automatically does the following:
     /// - Converts numbers to their equivalent words.For example:
@@ -1407,13 +1407,13 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
     ///		and it converts a % (percent sign) preceded by a number to its string representation:
     ///		100% becomes one hundred percent
     ///		This list is not exhaustive; the service makes similar adjustments for other characters as needed.
-    ///	
+    ///
     /// The call returns an HTTP 201 response code if the corpus is valid.It then asynchronously pre-processes the contents of the corpus and automatically extracts new words that it finds.This can take on the order of a minute or two to complete depending on the total number of words and the number of new words in the corpus, as well as the current load on the service.You cannot submit requests to add additional corpora or words to the custom model, or to train the model, until the service's analysis of the corpus for the current request completes. Use the GET /v1/customizations/{customization_id}/corpora method to check the status of the analysis.
-    /// 
+    ///
     /// The service auto-populates the model's words resource with any word that is not found in its base vocabulary; these are referred to as out-of-vocabulary (OOV) words. You can use the GET /v1/customizations/{customization_id}/words method to examine the words resource, using other words method to eliminate typos and modify how words are pronounced as needed.
-    /// 
+    ///
     /// To add a corpus file that has the same name as an existing corpus, set the allow_overwrite query parameter to true; otherwise, the request fails.Overwriting an existing corpus causes the service to process the corpus text file and extract OOV words anew.Before doing so, it removes any OOV words associated with the existing corpus from the model's words resource unless they were also added by another corpus or they have been modified in some way with the POST /v1/customizations/{customization_id}/words or PUT /v1/customizations/{customization_id}/words/{word_name} method.
-    /// 
+    ///
     /// The service limits the overall amount of data that you can add to a custom model to a maximum of 10 million total words from all corpora combined.Also, you can add no more than 30 thousand new words to a model; this includes words that the service extracts from corpora and words that you add directly.
     /// Note: This method is currently a beta release that is available for US English only
     /// </summary>

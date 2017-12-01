@@ -10,7 +10,7 @@ Open the ExampleDialog scene. In the ExampleDialog GameObject click on the Dialo
 Be sure a microphone is connected and enabled on your computer. Play the scene in the Unity editor and say "Hello" to Watson.
 
 ### ExampleLanguageTranslation
-Open the ExampleLanguageTranslation scene. At runtime, the Widgets will automatically connect their inputs and outputs resulting in a simple language translation application using [Speech to Text][speech_to_text], [Language Translation][language_translation] and [Text to Speech][text_to_speech]. 
+Open the ExampleLanguageTranslation scene. At runtime, the Widgets will automatically connect their inputs and outputs resulting in a simple language translation application using [Speech to Text][speech_to_text], [Language Translation][language_translation] and [Text to Speech][text_to_speech].
 
 Be sure a microphone is connected and enabled on your computer. Play the scene in the Unity editor and speak to Watson. Alternatively, phrases can be typed into the top field for translation. The [Language Translation][language_translation] service will auto detect language and translate the phrased to Spanish by default. Other languages are listed in the dropdowns above each field.
 

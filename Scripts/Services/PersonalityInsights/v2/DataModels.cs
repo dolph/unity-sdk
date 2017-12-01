@@ -28,7 +28,7 @@ namespace IBM.Watson.DeveloperCloud.Services.PersonalityInsights.v2
   public class Profile
   {
     /// <summary>
-    /// Detailed results for a specific characteristic of the input text. 
+    /// Detailed results for a specific characteristic of the input text.
     /// </summary>
     /// <value>The tree.</value>
     public TraitTreeNode tree { get; set; }
@@ -40,13 +40,13 @@ namespace IBM.Watson.DeveloperCloud.Services.PersonalityInsights.v2
     public string id { get; set; }
 
     /// <summary>
-    /// The source identifier for which these characteristics were computed. The value is derived from the sourceid field of the input ContentItem objects. The field is passed as-is from JSON input. Sanitize the contents of the field before displaying them to prevent cross-site scripting attacks. 
+    /// The source identifier for which these characteristics were computed. The value is derived from the sourceid field of the input ContentItem objects. The field is passed as-is from JSON input. Sanitize the contents of the field before displaying them to prevent cross-site scripting attacks.
     /// </summary>
     /// <value>The source.</value>
     public string source { get; set; }
 
     /// <summary>
-    /// The language model that was used to process the input; for example, en. 
+    /// The language model that was used to process the input; for example, en.
     /// </summary>
     /// <value>The processed lang.</value>
     public string processed_lang { get; set; }
@@ -182,13 +182,13 @@ namespace IBM.Watson.DeveloperCloud.Services.PersonalityInsights.v2
     public string sourceid { get; set; }
 
     /// <summary>
-    /// Timestamp that identifies when this content was created. Specify a value in milliseconds since the UNIX Epoch (January 1, 1970, at 0:00 UTC). Required only for results that include temporal behavior data. 
+    /// Timestamp that identifies when this content was created. Specify a value in milliseconds since the UNIX Epoch (January 1, 1970, at 0:00 UTC). Required only for results that include temporal behavior data.
     /// </summary>
     /// <value>The created.</value>
     public string created { get; set; }
 
     /// <summary>
-    /// Timestamp that identifies when this content was last updated. Specify a value in milliseconds since the UNIX Epoch (January 1, 1970, at 0:00 UTC). Required only for results that include temporal behavior data. 
+    /// Timestamp that identifies when this content was last updated. Specify a value in milliseconds since the UNIX Epoch (January 1, 1970, at 0:00 UTC). Required only for results that include temporal behavior data.
     /// </summary>
     /// <value>The updated.</value>
     public string updated { get; set; }

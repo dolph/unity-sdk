@@ -457,7 +457,7 @@ namespace WebSocketSharp.Net
     /// <exception cref="ArgumentNullException">
     /// <paramref name="cookie"/> is <see langword="null"/>.
     /// </exception>
-    public void Add (Cookie cookie) 
+    public void Add (Cookie cookie)
     {
       if (cookie == null)
         throw new ArgumentNullException ("cookie");
@@ -480,7 +480,7 @@ namespace WebSocketSharp.Net
     /// <exception cref="ArgumentNullException">
     /// <paramref name="cookies"/> is <see langword="null"/>.
     /// </exception>
-    public void Add (CookieCollection cookies) 
+    public void Add (CookieCollection cookies)
     {
       if (cookies == null)
         throw new ArgumentNullException ("cookies");

@@ -137,7 +137,7 @@ public class ExampleStreaming : MonoBehaviour
       }
       else
       {
-        // calculate the number of samples remaining until we ready for a block of audio, 
+        // calculate the number of samples remaining until we ready for a block of audio,
         // and wait that amount of time it will take to record.
         int remaining = bFirstBlock ? (midPoint - writePos) : (m_Recording.samples - writePos);
         float timeRemaining = (float)remaining / (float)m_RecordingHZ;

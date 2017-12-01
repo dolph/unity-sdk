@@ -142,7 +142,7 @@ private void PlayClip(AudioClip clip)
 ```
 
 ### Language Translator
-Select a domain, then identify or select the language of text, and then translate the text from one supported language to another.  
+Select a domain, then identify or select the language of text, and then translate the text from one supported language to another.
 Example: Ask how to get to the disco in Spanish using [Language Translator][language_translator] service.
 
 ```cs

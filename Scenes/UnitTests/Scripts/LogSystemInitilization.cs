@@ -32,7 +32,7 @@ namespace IBM.Watson.DeveloperCloud.Logging
     private int m_LogHistory = 2;
 
     /// <summary>
-    /// Log level definition to store on file. 
+    /// Log level definition to store on file.
     /// </summary>
     [SerializeField]
     private LogLevel m_LogLevelOnFile = LogLevel.STATUS;

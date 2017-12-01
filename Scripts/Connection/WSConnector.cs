@@ -172,7 +172,7 @@ namespace IBM.Watson.DeveloperCloud.Connection
     }
 
     /// <summary>
-    /// Create a WSConnector for the given service and function. 
+    /// Create a WSConnector for the given service and function.
     /// </summary>
     /// <param name="serviceID">The ID of the service.</param>
     /// <param name="function">The name of the function to connect.</param>
@@ -206,7 +206,7 @@ namespace IBM.Watson.DeveloperCloud.Connection
     {
 #if ENABLE_MESSAGE_DEBUGGING
             Log.Debug( "WSConnector", "Sending {0} message: {1}",
-                msg is TextMessage ? "TextMessage" : "BinaryMessage", 
+                msg is TextMessage ? "TextMessage" : "BinaryMessage",
                 msg is TextMessage ? ((TextMessage)msg).Text : ((BinaryMessage)msg).Data.Length.ToString() + " bytes" );
 #endif
       lock (m_SendQueue)
@@ -226,7 +226,7 @@ namespace IBM.Watson.DeveloperCloud.Connection
         m_SendThread.Start();
       }
 
-      // Run our receiver as a co-routine so it can invoke functions 
+      // Run our receiver as a co-routine so it can invoke functions
       // on the main thread.
       if (m_ReceiverRoutine == 0)
         m_ReceiverRoutine = Runnable.Run(ProcessReceiveQueue());
@@ -261,7 +261,7 @@ namespace IBM.Watson.DeveloperCloud.Connection
               Message msg = m_ReceiveQueue.Dequeue();
 #if ENABLE_MESSAGE_DEBUGGING
                             Log.Debug( "WSConnector", "Received {0} message: {1}",
-                                msg is TextMessage ? "TextMessage" : "BinaryMessage", 
+                                msg is TextMessage ? "TextMessage" : "BinaryMessage",
                                 msg is TextMessage ? ((TextMessage)msg).Text : ((BinaryMessage)msg).Data.Length.ToString() + " bytes" );
 #endif
               if (OnMessage != null)

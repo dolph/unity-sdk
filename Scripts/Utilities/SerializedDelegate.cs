@@ -23,7 +23,7 @@ using UnityEngine;
 namespace IBM.Watson.DeveloperCloud.Utilities
 {
   /// <summary>
-  /// This class allows for a delegate to be serialized for a component and method 
+  /// This class allows for a delegate to be serialized for a component and method
   /// on a given GameObject.
   /// </summary>
   [Serializable]

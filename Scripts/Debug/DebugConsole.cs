@@ -28,7 +28,7 @@ namespace IBM.Watson.DeveloperCloud.Debug
 {
   /// <summary>
   /// This class handles the display and updating of the debug console. This class must be attached onto a prefab object, since
-  /// it requires data to be setup to function. This class is a singleton instance, but doesn't use the Singleton class since 
+  /// it requires data to be setup to function. This class is a singleton instance, but doesn't use the Singleton class since
   /// it needs hold to data.
   /// </summary>
   public class DebugConsole : MonoBehaviour
@@ -122,7 +122,7 @@ namespace IBM.Watson.DeveloperCloud.Debug
     #endregion
 
     /// <summary>
-    /// Register a debug info 
+    /// Register a debug info
     /// </summary>
     /// <param name="label">The label to display next to the string returned by the callback.</param>
     /// <param name="callback">A callback function to invoke that should return a string to display in the debug console.</param>
@@ -281,7 +281,7 @@ namespace IBM.Watson.DeveloperCloud.Debug
       {
         EventManager.Instance.SendEvent("OnDebugCommand", m_CommandInput.text);
         m_CommandInput.text = string.Empty;
-        m_CommandInput.gameObject.SetActive(false);   // hide the input     
+        m_CommandInput.gameObject.SetActive(false);   // hide the input
         ActiveInput = false;
 
         // restore the key manager state

@@ -137,7 +137,7 @@ namespace IBM.Watson.DeveloperCloud.Services.Conversation.v1
     //}
 
     /// <summary>
-    /// The input text. 
+    /// The input text.
     /// </summary>
     public InputData input { get; set; }
     /// <summary>
@@ -249,7 +249,7 @@ namespace IBM.Watson.DeveloperCloud.Services.Conversation.v1
     //	system = new SystemResponse();
     //}
     /// <summary>
-    /// The unique identifier of the conversation. 
+    /// The unique identifier of the conversation.
     /// </summary>
     public string conversation_id { get; set; }
     /// <summary>

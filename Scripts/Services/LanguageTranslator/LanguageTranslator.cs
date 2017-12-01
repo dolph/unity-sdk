@@ -170,7 +170,7 @@ namespace IBM.Watson.DeveloperCloud.Services.LanguageTranslator.v1
     public enum TypeFilter
     {
       /// <summary>
-      /// Default types 
+      /// Default types
       /// </summary>
       DEFAULT,
       /// <summary>

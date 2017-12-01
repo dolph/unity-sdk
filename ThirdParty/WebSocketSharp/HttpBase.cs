@@ -202,7 +202,7 @@ namespace WebSocketSharp
     {
       return Encoding.UTF8.GetBytes (ToString ());
     }
-    
+
     #endregion
   }
 }

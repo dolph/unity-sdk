@@ -3,12 +3,12 @@
 namespace FullSerializer {
     /// <summary>
     /// This allows you to forward serialization of an object to one of its members. For example,
-    /// 
+    ///
     /// [fsForward("Values")]
     /// struct Wrapper {
     ///   public int[] Values;
     /// }
-    /// 
+    ///
     /// Then `Wrapper` will be serialized into a JSON array of integers. It will be as if `Wrapper`
     /// doesn't exist.
     /// </summary>

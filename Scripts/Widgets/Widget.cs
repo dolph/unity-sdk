@@ -478,7 +478,7 @@ namespace IBM.Watson.DeveloperCloud.Widgets
       }
 
       /// <summary>
-      /// Add a connect to a given object and optional target input. 
+      /// Add a connect to a given object and optional target input.
       /// </summary>
       /// <param name="targetObject">The object to target.</param>
       /// <param name="targetConnection">A optional argument of the target input on the object.</param>
@@ -494,7 +494,7 @@ namespace IBM.Watson.DeveloperCloud.Widgets
         if (targetConnection != null)
           c.TargetConnection = targetConnection;
         if (!c.ResolveTargetInput())
-          return false;       // couldn't resolve a input 
+          return false;       // couldn't resolve a input
         m_Connections.Add(c);
         if (OnInputAdded != null)
             OnInputAdded.Invoke(c.TargetInput);

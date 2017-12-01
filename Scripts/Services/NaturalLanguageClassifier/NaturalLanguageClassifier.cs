@@ -252,7 +252,7 @@ namespace IBM.Watson.DeveloperCloud.Services.NaturalLanguageClassifier.v1
 
     #region TrainClassifier
     /// <summary>
-    /// Train a new classifier. 
+    /// Train a new classifier.
     /// </summary>
     /// <param name="classifierName">A name to give the classifier.</param>
     /// <param name="language">Language of the classifier.</param>
@@ -543,7 +543,7 @@ namespace IBM.Watson.DeveloperCloud.Services.NaturalLanguageClassifier.v1
           {
             foreach (var classifier in classifiers.classifiers)
             {
-              // check the status of one classifier, if it's listed as "Unavailable" then fail 
+              // check the status of one classifier, if it's listed as "Unavailable" then fail
               if (!m_Service.GetClassifier(classifier.classifier_id, OnCheckService))
               {
                 OnFailure("Failed to call GetClassifier()");

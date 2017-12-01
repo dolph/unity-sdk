@@ -11,7 +11,7 @@ namespace FullSerializer
         [MenuItem("Watson/FullSerializer/Build AOT", false, 5 )]
         public static void BuildAOT()
         {
-            var outputDirectory = Application.dataPath + "/fsAotCompilations";           
+            var outputDirectory = Application.dataPath + "/fsAotCompilations";
             if (!Directory.Exists(outputDirectory))
                 Directory.CreateDirectory(outputDirectory);
 
@@ -64,7 +64,7 @@ namespace FullSerializer
         [MenuItem("Watson/FullSerializer/Clean AOT", false, 6 )]
         public static void CleanAOT()
         {
-            var outputDirectory = Application.dataPath + "/fsAotCompilations";           
+            var outputDirectory = Application.dataPath + "/fsAotCompilations";
             if (Directory.Exists(outputDirectory))
             {
                 Directory.Delete( outputDirectory, true );

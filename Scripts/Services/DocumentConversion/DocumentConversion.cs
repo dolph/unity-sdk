@@ -168,7 +168,7 @@ namespace IBM.Watson.DeveloperCloud.Services.DocumentConversion.v1
     #endregion
 
     #region IWatsonService interface
-    /// <exclude /> 
+    /// <exclude />
     public string GetServiceID()
     {
       return SERVICE_ID;

@@ -18,9 +18,9 @@ or [Stack Overflow](http://stackoverflow.com/questions/ask?tags=ibm-watson).
 * Constants should be all upper case (e.g. static readonly string CONFIG_FILE = "/Config.json"). This includes enumerations.
 * All public functions and types of all classes should be fully documented using the XML comment style.
 * Local variables should begin with lower-case character, then camel case after the first character. (e.g. var widgetConnector = new WidgetConnector())
-* Use protected on variables & functions only if you plan to inherit from the class or there is a good chance we will need to be polymorphic. 
+* Use protected on variables & functions only if you plan to inherit from the class or there is a good chance we will need to be polymorphic.
 * Use region to separate parts of a class based on functionality.
- 
+
 # Issues
 
 If you encounter an issue with the Unity SDK library, you are welcome to submit

@@ -107,7 +107,7 @@ namespace IBM.Watson.DeveloperCloud.Services.TextToSpeech.v1
     }
     #endregion
 
-    #region GetVoices 
+    #region GetVoices
     /// <summary>
     /// This callback is used by the GetVoices() function.
     /// </summary>
@@ -166,7 +166,7 @@ namespace IBM.Watson.DeveloperCloud.Services.TextToSpeech.v1
     }
     #endregion
 
-    #region GetVoice 
+    #region GetVoice
     /// <summary>
     /// This callback is used by the GetVoice() function.
     /// </summary>
@@ -356,7 +356,7 @@ namespace IBM.Watson.DeveloperCloud.Services.TextToSpeech.v1
     /// <param name="pronunciation">The pronunciation strting.</param>
     public delegate void GetPronunciationCallback(Pronunciation pronunciation);
     /// <summary>
-    /// Returns the phonetic pronunciation for the word specified by the text parameter. You can request 
+    /// Returns the phonetic pronunciation for the word specified by the text parameter. You can request
     /// the pronunciation for a specific format. You can also request the pronunciation for a specific
     /// voice to see the default translation for the language of that voice or for a specific custom voice
     /// model to see the translation for that voice model.

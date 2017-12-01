@@ -856,7 +856,7 @@
         </member>
         <member name="M:HtmlAgilityPack.HtmlNodeNavigator.MoveToNamespace(System.String)">
             <summary>
-            Moves the XPathNavigator to the namespace node with the specified local name. 
+            Moves the XPathNavigator to the namespace node with the specified local name.
             Always returns false for the HtmlNavigator implementation.
             </summary>
             <param name="name">The local name of the namespace node.</param>

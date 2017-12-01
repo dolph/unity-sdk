@@ -894,7 +894,7 @@ namespace IBM.Watson.DeveloperCloud.Services.VisualRecognition.v3
 
     #region TrainClassifier
     /// <summary>
-    /// Trains a classifier. Training requires a total of at least two zip files: Two positive example zips with 
+    /// Trains a classifier. Training requires a total of at least two zip files: Two positive example zips with
     /// at least 10 positive examples each or one zip file of 10 positive examples and a zip file of 10 negative examples.
     /// The total size of all files must be below 256mb. Additional training can be done by using UpdateClassifier.
     /// </summary>
@@ -944,7 +944,7 @@ namespace IBM.Watson.DeveloperCloud.Services.VisualRecognition.v3
     }
 
     /// <summary>
-    /// Trains a classifier  
+    /// Trains a classifier
     /// </summary>
     /// <param name="callback">Callback.</param>
     /// <param name="classifierName">Classifier name.</param>

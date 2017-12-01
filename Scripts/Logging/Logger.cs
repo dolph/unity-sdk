@@ -102,7 +102,7 @@ namespace IBM.Watson.DeveloperCloud.Logging
   };
 
   /// <summary>
-  /// This singleton class maintains the of list of installed reactors and handles all LogRecord 
+  /// This singleton class maintains the of list of installed reactors and handles all LogRecord
   /// objects. See the static class Log for functions the end user of this system should actually
   /// be calling. This class is thread safe.
   /// </summary>

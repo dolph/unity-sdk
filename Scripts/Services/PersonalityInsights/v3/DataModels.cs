@@ -35,40 +35,40 @@ namespace IBM.Watson.DeveloperCloud.Services.PersonalityInsights.v3
     /// </summary>
     public int word_count { get; set; }
     /// <summary>
-    /// When guidance is appropriate, a string that provides a message that indicates 
-    /// the number of words found and where that value falls in the range of required 
+    /// When guidance is appropriate, a string that provides a message that indicates
+    /// the number of words found and where that value falls in the range of required
     /// or suggested number of words.
     /// </summary>
     public string word_count_message { get; set; }
     /// <summary>
-    /// Detailed results for the Big Five personality characteristics (dimensions and 
+    /// Detailed results for the Big Five personality characteristics (dimensions and
     /// facets) inferred from the input text.
     /// </summary>
     public TraitTreeNode[] personality { get; set; }
     /// <summary>
-    /// Detailed results for the Needs characteristics inferred from the input text. 
+    /// Detailed results for the Needs characteristics inferred from the input text.
     /// </summary>
     public TraitTreeNode[] values { get; set; }
     /// <summary>
-    /// Detailed results for the Values characteristics inferred from the input text. 
+    /// Detailed results for the Values characteristics inferred from the input text.
     /// </summary>
     public TraitTreeNode[] needs { get; set; }
     /// <summary>
-    /// For JSON content that is timestamped, detailed results about the social behavior 
-    /// disclosed by the input in terms of temporal characteristics. The results include 
-    /// information about the distribution of the content over the days of the week and 
+    /// For JSON content that is timestamped, detailed results about the social behavior
+    /// disclosed by the input in terms of temporal characteristics. The results include
+    /// information about the distribution of the content over the days of the week and
     /// the hours of the day.
     /// </summary>
     public BehaviorNode[] behavior { get; set; }
     /// <summary>
-    /// If the consumption_preferences query parameter is true, detailed results for 
+    /// If the consumption_preferences query parameter is true, detailed results for
     /// each category of `consumption preferences`. Each element of the array provides
-    /// information inferred from the input text for the individual preferences of that 
-    /// category. 
+    /// information inferred from the input text for the individual preferences of that
+    /// category.
     /// </summary>
     public ConsumptionPreferencesCategoryNode[] consumption_preferences { get; set; }
     /// <summary>
-    /// Warning messages associated with the input text submitted with the request. The 
+    /// Warning messages associated with the input text submitted with the request. The
     /// array is empty if the input generated no warnings.
     /// </summary>
     public Warning[] warning { get; set; }
@@ -81,8 +81,8 @@ namespace IBM.Watson.DeveloperCloud.Services.PersonalityInsights.v3
   public class TraitTreeNode
   {
     /// <summary>
-    /// The unique identifier of the characteristic to which the results pertain. IDs 
-    /// have the form `big5_` for Big Five personality characteristics, `need_` for Needs, 
+    /// The unique identifier of the characteristic to which the results pertain. IDs
+    /// have the form `big5_` for Big Five personality characteristics, `need_` for Needs,
     /// or `value_` for Values.
     /// </summary>
     public string trait_id { get; set; }
@@ -91,28 +91,28 @@ namespace IBM.Watson.DeveloperCloud.Services.PersonalityInsights.v3
     /// </summary>
     public string name { get; set; }
     /// <summary>
-    /// The category of the characteristic: personality for Big Five `personality` 
-    /// characteristics, `needs` for Needs, or `values` for Values. 
+    /// The category of the characteristic: personality for Big Five `personality`
+    /// characteristics, `needs` for Needs, or `values` for Values.
     /// </summary>
     public string category { get; set; }
     /// <summary>
-    /// The normalized percentile score for the characteristic. The range is 0 to 1. For 
-    /// example, if the percentage for Openness is 0.60, the author scored in the 60th 
-    /// percentile; the author is more open than 59 percent of the population and less open 
+    /// The normalized percentile score for the characteristic. The range is 0 to 1. For
+    /// example, if the percentage for Openness is 0.60, the author scored in the 60th
+    /// percentile; the author is more open than 59 percent of the population and less open
     /// than 39 percent of the population.
     /// </summary>
     public double percentile { get; set; }
     /// <summary>
-    /// The raw score for the characteristic. A positive or negative score indicates more 
-    /// or less of the characteristic; zero indicates neutrality or no evidence for a 
-    /// score. The raw score is computed based on the input and the service model; it is 
-    /// not normalized or compared with a sample population. The raw score enables 
-    /// comparison of the results against a different sampling population and with a custom 
-    /// normalization approach. 
+    /// The raw score for the characteristic. A positive or negative score indicates more
+    /// or less of the characteristic; zero indicates neutrality or no evidence for a
+    /// score. The raw score is computed based on the input and the service model; it is
+    /// not normalized or compared with a sample population. The raw score enables
+    /// comparison of the results against a different sampling population and with a custom
+    /// normalization approach.
     /// </summary>
     public double raw_score { get; set; }
     /// <summary>
-    /// For `personality` (Big Five) dimensions, more detailed results for the facets of 
+    /// For `personality` (Big Five) dimensions, more detailed results for the facets of
     /// each dimension as inferred from the input text.
     /// </summary>
     public TraitTreeNode[] children { get; set; }
@@ -125,7 +125,7 @@ namespace IBM.Watson.DeveloperCloud.Services.PersonalityInsights.v3
   public class BehaviorNode
   {
     /// <summary>
-    /// The unique identifier of the characteristic to which the results pertain. IDs have 
+    /// The unique identifier of the characteristic to which the results pertain. IDs have
     /// the form `behavior_`.
     /// </summary>
     public string trait_id { get; set; }
@@ -152,7 +152,7 @@ namespace IBM.Watson.DeveloperCloud.Services.PersonalityInsights.v3
   {
     /// <summary>
     /// The unique identifier of the consumption preferences category to which the results
-    /// pertain. IDs have the form `consumption_preferences_`. 
+    /// pertain. IDs have the form `consumption_preferences_`.
     /// </summary>
     public string consumption_preference_category_id { get; set; }
     /// <summary>
@@ -174,18 +174,18 @@ namespace IBM.Watson.DeveloperCloud.Services.PersonalityInsights.v3
   {
     /// <summary>
     /// The identifier of the warning message, one of `WORD_COUNT_MESSAGE`, `JSON_AS_TEXT`,
-    /// or `PARTIAL_TEXT_USED`. 
+    /// or `PARTIAL_TEXT_USED`.
     /// </summary>
     public string warning_id { get; set; }
     /// <summary>
-    /// The message associated with the `warning_id`. For `WORD_COUNT_MESSAGE`, "There were 
-    /// <number> words in the input. We need a minimum of 600, preferably 1,200 or more, to 
+    /// The message associated with the `warning_id`. For `WORD_COUNT_MESSAGE`, "There were
+    /// <number> words in the input. We need a minimum of 600, preferably 1,200 or more, to
     /// compute statistically significant estimates."; for `JSON_AS_TEXT`, "Request input
-    /// was processed as text/plain as indicated, however detected a JSON input. Did you 
-    /// mean application/json?"; and for `PARTIAL_TEXT_USED`, "The text provided to compute the 
+    /// was processed as text/plain as indicated, however detected a JSON input. Did you
+    /// mean application/json?"; and for `PARTIAL_TEXT_USED`, "The text provided to compute the
     /// profile was trimmed for performance reasons. This action does not affect the accuracy
     /// of the output, as not all of the input text was required." The `PARTIAL_TEXT_USED`
-    /// warning applies only when Arabic input text exceeds a threshold at which additional 
+    /// warning applies only when Arabic input text exceeds a threshold at which additional
     /// words do not contribute to the accuracy of the profile.
     /// </summary>
     public string message { get; set; }
@@ -199,11 +199,11 @@ namespace IBM.Watson.DeveloperCloud.Services.PersonalityInsights.v3
   {
     /// <summary>
     /// The unique identifier of the consumption preference to which the results pertain.
-    /// IDs have the form `consumption_preferences_`. 
+    /// IDs have the form `consumption_preferences_`.
     /// </summary>
     public string consumption_preference_id { get; set; }
     /// <summary>
-    /// The user-visible name of the consumption preference. 
+    /// The user-visible name of the consumption preference.
     /// </summary>
     public string name { get; set; }
     /// <summary>

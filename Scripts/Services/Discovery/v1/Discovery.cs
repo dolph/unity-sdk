@@ -136,7 +136,7 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         public delegate void OnAddEnvironment(Environment resp, string customData);
 
         /// <summary>
-        /// Creates a new environment. You can only create one environment per service instance.An attempt to create another environment 
+        /// Creates a new environment. You can only create one environment per service instance.An attempt to create another environment
         /// will result in an error. The size of the new environment can be controlled by specifying the size parameter.
         /// </summary>
         /// <param name="callback">The OnAddEnvironment callback.</param>
@@ -159,7 +159,7 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         }
 
         /// <summary>
-        /// Creates a new environment. You can only create one environment per service instance.An attempt to create another environment 
+        /// Creates a new environment. You can only create one environment per service instance.An attempt to create another environment
         /// will result in an error. The size of the new environment can be controlled by specifying the size parameter.
         /// </summary>
         /// <param name="callback">The OnAddEnvironment callback.</param>
@@ -563,7 +563,7 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         public delegate void OnGetConfiguration(Configuration resp, string customData);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="callback">The OnGetConfiguration callback.</param>
         /// <param name="environmentID">The environment identifier.</param>
@@ -702,21 +702,21 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         public delegate void OnPreviewConfiguration(TestDocument resp, string customData);
 
         /// <summary>
-        /// Runs a sample document through the default or your configuration and returns diagnostic information designed to 
+        /// Runs a sample document through the default or your configuration and returns diagnostic information designed to
         /// help you understand how the document was processed. The document is not added to the index.
         /// </summary>
         /// <param name="callback">The OnPreviewConfiguration callback.</param>
         /// <param name="environmentID">The environment identifier.</param>
-        /// <param name="configurationID">The ID of the configuration to use to process the document. If the configurationFilePath is also 
+        /// <param name="configurationID">The ID of the configuration to use to process the document. If the configurationFilePath is also
         /// provided (both are present at the same time), then request will be rejected.</param>
-        /// <param name="configurationFilePath">The configuration to use to process the document. If this part is provided, then the 
-        /// provided configuration is used to process the document. If the configuration_id is also provided (both are present at the 
-        /// same time), then request is rejected. The maximum supported configuration size is 1 MB. Configuration parts larger than 1 MB 
+        /// <param name="configurationFilePath">The configuration to use to process the document. If this part is provided, then the
+        /// provided configuration is used to process the document. If the configuration_id is also provided (both are present at the
+        /// same time), then request is rejected. The maximum supported configuration size is 1 MB. Configuration parts larger than 1 MB
         /// are rejected. See the GET /configurations/{configuration_id} operation for an example configuration.</param>
-        /// <param name="contentFilePath">The file path to document to ingest.The maximum supported file size is 50 megabytes. Files 
+        /// <param name="contentFilePath">The file path to document to ingest.The maximum supported file size is 50 megabytes. Files
         /// larger than 50 megabytes is rejected.</param>
-        /// <param name="metadata">If you're using the Data Crawler to upload your documents, you can test a document against the type of 
-        /// metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than 1 MB 
+        /// <param name="metadata">If you're using the Data Crawler to upload your documents, you can test a document against the type of
+        /// metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than 1 MB
         /// are rejected. Example: { "Creator": "Johnny Appleseed", "Subject": "Apples" }</param>
         /// <param name="customData">Optional custom data.</param>
         /// <returns>True if the call succeeds, false if the call is unsuccessful.</returns>
@@ -753,22 +753,22 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         }
 
         /// <summary>
-        /// Runs a sample document through the default or your configuration and returns diagnostic information designed to 
+        /// Runs a sample document through the default or your configuration and returns diagnostic information designed to
         /// help you understand how the document was processed. The document is not added to the index.
         /// </summary>
         /// <param name="callback">The OnPreviewConfiguration callback.</param>
         /// <param name="environmentID">The environment identifier.</param>
-        /// <param name="configurationID">The ID of the configuration to use to process the document. If the configurationFilePath is also 
+        /// <param name="configurationID">The ID of the configuration to use to process the document. If the configurationFilePath is also
         /// provided (both are present at the same time), then request will be rejected.</param>
-        /// <param name="configurationFilePath">The configuration to use to process the document. If this part is provided, then the 
-        /// provided configuration is used to process the document. If the configuration_id is also provided (both are present at the 
-        /// same time), then request is rejected. The maximum supported configuration size is 1 MB. Configuration parts larger than 1 MB 
+        /// <param name="configurationFilePath">The configuration to use to process the document. If this part is provided, then the
+        /// provided configuration is used to process the document. If the configuration_id is also provided (both are present at the
+        /// same time), then request is rejected. The maximum supported configuration size is 1 MB. Configuration parts larger than 1 MB
         /// are rejected. See the GET /configurations/{configuration_id} operation for an example configuration.</param>
-        /// <param name="contentData">The byte array data of the document to ingest.The maximum supported file size is 50 megabytes. Files 
+        /// <param name="contentData">The byte array data of the document to ingest.The maximum supported file size is 50 megabytes. Files
         /// larger than 50 megabytes is rejected.</param>
         /// <param name="contentMimeType">The mimeType of the document to ingest.</param>
-        /// <param name="metadata">If you're using the Data Crawler to upload your documents, you can test a document against the type of 
-        /// metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than 1 MB 
+        /// <param name="metadata">If you're using the Data Crawler to upload your documents, you can test a document against the type of
+        /// metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than 1 MB
         /// are rejected. Example: { "Creator": "Johnny Appleseed", "Subject": "Apples" }</param>
         /// <param name="customData">Optional custom data.</param>
         /// <returns>True if the call succeeds, false if the call is unsuccessful.</returns>
@@ -1294,9 +1294,9 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         public delegate void OnAddDocument(DocumentAccepted resp, string customData);
 
         /// <summary>
-        /// Add a document to a collection with optional metadata and optional configuration. The configuration to use to process 
-        /// the document can be provided using the configuration_id argument. Returns immediately after the system has accepted the 
-        /// document for processing. The user must provide document content, metadata, or both. If the request is missing both document 
+        /// Add a document to a collection with optional metadata and optional configuration. The configuration to use to process
+        /// the document can be provided using the configuration_id argument. Returns immediately after the system has accepted the
+        /// document for processing. The user must provide document content, metadata, or both. If the request is missing both document
         /// content and metadata, then it will be rejected.
         /// </summary>
         /// <param name="callback">The callback.</param>
@@ -1305,10 +1305,10 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         /// <param name="contentFilePath">The path to content file to be added.</param>
         /// <param name="configurationID">The ID of the configuration to use to process the document. If the configuration form part
         /// is also provided (both are present at the same time), then request will be rejected.</param>
-        /// <param name="configurationFilePath">The content of the document to ingest.The maximum supported file size is 50 megabytes. 
+        /// <param name="configurationFilePath">The content of the document to ingest.The maximum supported file size is 50 megabytes.
         /// Files larger than 50 megabytes is rejected.</param>
-        /// <param name="metadata">If you're using the Data Crawler to upload your documents, you can test a document against the type 
-        /// of metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than 
+        /// <param name="metadata">If you're using the Data Crawler to upload your documents, you can test a document against the type
+        /// of metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than
         /// 1 MB are rejected. Example: { "Creator": "Johnny Appleseed", "Subject": "Apples" }</param>
         /// <param name="customData">Optional custom data.</param>
         /// <returns>True if the call succeeds, false if the call is unsuccessful.</returns>
@@ -1360,9 +1360,9 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         }
 
         /// <summary>
-        /// Add a document to a collection with optional metadata and optional configuration. The configuration to use to process 
-        /// the document can be provided using the configuration_id argument. Returns immediately after the system has accepted the 
-        /// document for processing. The user must provide document content, metadata, or both. If the request is missing both document 
+        /// Add a document to a collection with optional metadata and optional configuration. The configuration to use to process
+        /// the document can be provided using the configuration_id argument. Returns immediately after the system has accepted the
+        /// document for processing. The user must provide document content, metadata, or both. If the request is missing both document
         /// content and metadata, then it will be rejected.
         /// </summary>
         /// <param name="callback">The OnAddDocument callback.</param>
@@ -1371,8 +1371,8 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         /// <param name="contentData">A byte array of content to be ingested.</param>
         /// <param name="contentMimeType">The mimeType of the content data to be ingested.</param>
         /// <param name="configurationID">The identifier of the configuration to use to process the document.</param>
-        /// <param name="metadata">If you're using the Data Crawler to upload your documents, you can test a document against the type 
-        /// of metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than 
+        /// <param name="metadata">If you're using the Data Crawler to upload your documents, you can test a document against the type
+        /// of metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than
         /// 1 MB are rejected. Example: { "Creator": "Johnny Appleseed", "Subject": "Apples" }</param>
         /// <param name="customData">Optional custom data.</param>
         /// <returns>True if the call succeeds, false if the call is unsuccessful.</returns>
@@ -1400,9 +1400,9 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         }
 
         /// <summary>
-        /// Add a document to a collection with optional metadata and optional configuration. The configuration to use to process 
-        /// the document can be provided using the configuration_id argument. Returns immediately after the system has accepted the 
-        /// document for processing. The user must provide document content, metadata, or both. If the request is missing both document 
+        /// Add a document to a collection with optional metadata and optional configuration. The configuration to use to process
+        /// the document can be provided using the configuration_id argument. Returns immediately after the system has accepted the
+        /// document for processing. The user must provide document content, metadata, or both. If the request is missing both document
         /// content and metadata, then it will be rejected.
         /// </summary>
         /// <param name="callback">The OnAddDocument callback.</param>
@@ -1411,8 +1411,8 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         /// <param name="contentData">A byte array of content to be ingested.</param>
         /// <param name="contentMimeType">The mimeType of the content data to be ingested./param>
         /// <param name="configurationFilePath">The file path to the configuration to use to process the document.</param>
-        /// <param name="metadata">If you're using the Data Crawler to upload your documents, you can test a document against the type 
-        /// of metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than 
+        /// <param name="metadata">If you're using the Data Crawler to upload your documents, you can test a document against the type
+        /// of metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than
         /// 1 MB are rejected. Example: { "Creator": "Johnny Appleseed", "Subject": "Apples" }</param>
         /// <param name="customData">Optional custom data.</param>
         /// <returns>True if the call succeeds, false if the call is unsuccessful.</returns>
@@ -1454,9 +1454,9 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         }
 
         /// <summary>
-        /// Add a document to a collection with optional metadata and optional configuration. The configuration to use to process 
-        /// the document can be provided using the configuration_id argument. Returns immediately after the system has accepted the 
-        /// document for processing. The user must provide document content, metadata, or both. If the request is missing both document 
+        /// Add a document to a collection with optional metadata and optional configuration. The configuration to use to process
+        /// the document can be provided using the configuration_id argument. Returns immediately after the system has accepted the
+        /// document for processing. The user must provide document content, metadata, or both. If the request is missing both document
         /// content and metadata, then it will be rejected.
         /// </summary>
         /// <param name="callback">The OnAddDocument callback.</param>
@@ -1466,8 +1466,8 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         /// <param name="contentMimeType">The mimeType of the content data to be ingested./param>
         /// <param name="configurationID">The configuration identifier. If this is specified, do not specify a configuration.</param>
         /// <param name="configuration">A json string of the configuration to test. If this is specified, do not specify a configurationID.</param>
-        /// <param name="metadata">If you're using the Data Crawler to upload your documents, you can test a document against the type 
-        /// of metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than 
+        /// <param name="metadata">If you're using the Data Crawler to upload your documents, you can test a document against the type
+        /// of metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than
         /// 1 MB are rejected. Example: { "Creator": "Johnny Appleseed", "Subject": "Apples" }</param>
         /// <param name="customData">Optional custom data.</param>
         /// <returns>True if the call succeeds, false if the call is unsuccessful.</returns>
@@ -1580,7 +1580,7 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         public delegate void OnDeleteDocument(bool success, string customData);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="callback">The OnDeleteDocument callback.</param>
         /// <param name="environmentID">The environment identifier.</param>
@@ -1738,8 +1738,8 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         /// <param name="contentFilePath">The file path to the updated document to be ingested.</param>
         /// <param name="configurationID">The configuration identifier to use for ingestion. If this is specified, do not specify configurationFilePath.</param>
         /// <param name="configurationFilePath">The path to a configuration file to use for ingestion. If this is specified, do not specify configurationID.</param>
-        /// <param name="metadata">If you're using the Data Crawler to upload your documents, you can test a document against the type 
-        /// of metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than 
+        /// <param name="metadata">If you're using the Data Crawler to upload your documents, you can test a document against the type
+        /// of metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than
         /// 1 MB are rejected. Example: { "Creator": "Johnny Appleseed", "Subject": "Apples" }</param>
         /// <param name="customData">Optional custom data.</param>
         /// <returns>True if the call succeeds, false if the call is unsuccessful.</returns>
@@ -1800,8 +1800,8 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         /// <param name="contentData">A byte array of content to be ingested.</param>
         /// <param name="contentMimeType">The mimeType of the content data to be ingested./param>
         /// <param name="configurationID">The identifier of the configuration to use to process the document.</param>
-        /// <param name="metadata">If you're using the Data Crawler to upload your documents, you can test a document against the type 
-        /// of metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than 
+        /// <param name="metadata">If you're using the Data Crawler to upload your documents, you can test a document against the type
+        /// of metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than
         /// 1 MB are rejected. Example: { "Creator": "Johnny Appleseed", "Subject": "Apples" }</param>
         /// <param name="customData">Optional custom data.</param>
         /// <returns>True if the call succeeds, false if the call is unsuccessful.</returns>
@@ -1841,8 +1841,8 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         /// <param name="contentData">A byte array of content to be ingested.</param>
         /// <param name="contentMimeType">The mimeType of the content data to be ingested./param>
         /// <param name="configurationFilePath">The file path to the configuration to use to process</param>
-        /// <param name="metadata">If you're using the Data Crawler to upload your documents, you can test a document against the type 
-        /// of metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than 
+        /// <param name="metadata">If you're using the Data Crawler to upload your documents, you can test a document against the type
+        /// of metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than
         /// 1 MB are rejected. Example: { "Creator": "Johnny Appleseed", "Subject": "Apples" }</param>
         /// <param name="customData">Optional custom data.</param>
         /// <returns>True if the call succeeds, false if the call is unsuccessful.</returns>
@@ -1897,8 +1897,8 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         /// <param name="contentMimeType">The mimeType of the content data to be updated.</param>
         /// <param name="configurationID">The configuration identifier. If this is specified, do not specify a configuration.</param>
         /// <param name="configuration">A json string of the configuration to test. If this is specified, do not specify a configurationID.</param>
-        /// <param name="metadata">If you're using the Data Crawler to upload your documents, you can test a document against the type 
-        /// of metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than 
+        /// <param name="metadata">If you're using the Data Crawler to upload your documents, you can test a document against the type
+        /// of metadata that the Data Crawler might send. The maximum supported metadata file size is 1 MB. Metadata parts larger than
         /// 1 MB are rejected. Example: { "Creator": "Johnny Appleseed", "Subject": "Apples" }</param>
         /// <param name="customData">Optional custom data.</param>
         /// <returns>True if the call succeeds, false if the call is unsuccessful.</returns>
@@ -2022,13 +2022,13 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         /// <param name="callback">The OnQuery callback.</param>
         /// <param name="environmentID">The environment identifier.</param>
         /// <param name="collectionID">The collection identifier.</param>
-        /// <param name="filter">A cacheable query that limits the documents returned to exclude any documents that don't mention 
-        /// the query content. Filter searches are better for metadata type searches and when you are trying to get a sense of concepts 
+        /// <param name="filter">A cacheable query that limits the documents returned to exclude any documents that don't mention
+        /// the query content. Filter searches are better for metadata type searches and when you are trying to get a sense of concepts
         /// in the data set.</param>
         /// <param name="query">A query search returns all documents in your data set with full enrichments and full text, but with the
         /// most relevant documents listed first. Use a query search when you want to find the most relevant search results.</param>
-        /// <param name="aggregation">An aggregation search uses combinations of filters and query search to return an exact answer. 
-        /// Aggregations are useful for building applications, because you can use them to build lists, tables, and time series. For a 
+        /// <param name="aggregation">An aggregation search uses combinations of filters and query search to return an exact answer.
+        /// Aggregations are useful for building applications, because you can use them to build lists, tables, and time series. For a
         /// full list of possible aggregrations, see the Query reference.</param>
         /// <param name="count">Number of documents to return.</param>
         /// <param name="_return">A comma separated list of the portion of the document hierarchy to return.</param>

@@ -466,7 +466,7 @@ namespace WebSocketSharp.Net
         return _port;
       }
 
-      set { 
+      set {
         if (value.IsNullOrEmpty ()) {
           _port = String.Empty;
           _ports = new int[0];

@@ -24,7 +24,7 @@ namespace System {
             for (int i = 0; i < types.Length; ++i) {
                 if (types[i].Name == name) {
                     return types[i];
-                }   
+                }
             }
 
             if (throwOnError) throw new Exception("Type " + name + " was not found");

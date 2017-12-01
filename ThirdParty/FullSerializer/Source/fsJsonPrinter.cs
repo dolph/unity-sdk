@@ -144,7 +144,7 @@ namespace FullSerializer {
                         break;
                     }
             }
-        } 
+        }
 
         /// <summary>
         /// Formats this data into the given builder.

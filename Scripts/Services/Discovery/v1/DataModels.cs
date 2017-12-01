@@ -146,7 +146,7 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
     }
 
     /// <summary>
-    /// The environment's unique identifier and its status. A status of deleted indicates that 
+    /// The environment's unique identifier and its status. A status of deleted indicates that
     /// the environment has been successfully deleted.
     /// </summary>
     [fsObject]
@@ -179,7 +179,7 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         /// </summary>
         public string status { get; set; }
         /// <summary>
-        /// Number of 10-kB units of field data enrichments that were enriched. This can be used to estimate 
+        /// Number of 10-kB units of field data enrichments that were enriched. This can be used to estimate
         /// the cost of ingesting the document.
         /// </summary>
         public double enriched_field_units { get; set; }
@@ -244,7 +244,7 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
 
     #region Configurations
     /// <summary>
-    /// An array that lists each configuration's ID, name, description, creation date, and date of 
+    /// An array that lists each configuration's ID, name, description, creation date, and date of
     /// last update.
     /// </summary>
     [fsObject]
@@ -331,52 +331,52 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
     public class Conversions
     {
         /// <summary>
-        /// A list of PDF conversion settings, including the conversions applied to different types of 
+        /// A list of PDF conversion settings, including the conversions applied to different types of
         /// headings as defined by font attributes.
         /// </summary>
         public PdfSettings pdf { get; set; }
         /// <summary>
-        /// A list of Word conversion settings, including the conversions applied to different types of 
+        /// A list of Word conversion settings, including the conversions applied to different types of
         /// headings as defined by font attributes and to different formatting styles of text.
         /// </summary>
         public WordSettings word { get; set; }
         /// <summary>
-        /// A list of HTML conversion settings, including tags that are to be excluded completely; tags 
-        /// that are to be discarded but their content kept; content that is to be excluded as defined 
+        /// A list of HTML conversion settings, including tags that are to be excluded completely; tags
+        /// that are to be discarded but their content kept; content that is to be excluded as defined
         /// by xpaths; content that is to be kept as defined by xpaths; and tag attributes that are to be excluded.
         /// </summary>
         public HtmlSettings html { get; set; }
         /// <summary>
-        /// An array of JSON normalization operations, including one or more of the following: 
-        /// 
-        /// copy — Copies the value of the source_field to the destination_field. If the destination_field already 
-        /// exists, the value of the source_field overwrites the original value of the destination_field. 
-        /// 
+        /// An array of JSON normalization operations, including one or more of the following:
+        ///
+        /// copy — Copies the value of the source_field to the destination_field. If the destination_field already
+        /// exists, the value of the source_field overwrites the original value of the destination_field.
+        ///
         /// move — Renames (moves) the source_field to the destination_field.If the destination_field already exists,
-        /// the value of the source_field overwrites the original value of the destination_field. Rename is 
-        /// identical to copy, except that the source_field is removed after the value has been copied to the 
-        /// destination_field. It is the same as a copy followed by a remove. 
-        /// 
-        /// merge — Merges the value of the source_field with the value of the destination_field. The 
-        /// destination_field is converted into an array if it is not already an array, and the value of the 
-        /// source_field is appended to the array. This operation removes the source_field after the merge. If the 
-        /// source_field does not exist in the current document, the destination_field is converted into an array if 
-        /// it is not already an array. This is ensures the type for destination_field is consistent across all 
-        /// documents. 
-        /// 
-        /// remove — Deletes the source_field. The destination_field is ignored for this operation. 
-        /// 
-        /// remove_nulls — Removes all nested null (blank) leaf values from the JSON tree. The source_field and 
+        /// the value of the source_field overwrites the original value of the destination_field. Rename is
+        /// identical to copy, except that the source_field is removed after the value has been copied to the
+        /// destination_field. It is the same as a copy followed by a remove.
+        ///
+        /// merge — Merges the value of the source_field with the value of the destination_field. The
+        /// destination_field is converted into an array if it is not already an array, and the value of the
+        /// source_field is appended to the array. This operation removes the source_field after the merge. If the
+        /// source_field does not exist in the current document, the destination_field is converted into an array if
+        /// it is not already an array. This is ensures the type for destination_field is consistent across all
+        /// documents.
+        ///
+        /// remove — Deletes the source_field. The destination_field is ignored for this operation.
+        ///
+        /// remove_nulls — Removes all nested null (blank) leaf values from the JSON tree. The source_field and
         /// destination_field are ignored by this operation because remove_nulls operates on the entire JSON tree.
-        /// Typically, remove_nulls is invoked as the last normalization operation; if it is invoked, it can be 
-        /// time-expensive. The array also lists the source_field and destination_field for each operation. If no 
+        /// Typically, remove_nulls is invoked as the last normalization operation; if it is invoked, it can be
+        /// time-expensive. The array also lists the source_field and destination_field for each operation. If no
         /// JSON normalization operations are specified, the method returns an empty array.
         /// </summary>
         public NormalizationOperation[] json_normalizations { get; set; }
     }
 
     /// <summary>
-    /// A list of PDF conversion settings, including the conversions applied to different types of headings as 
+    /// A list of PDF conversion settings, including the conversions applied to different types of headings as
     /// defined by font attributes.
     /// </summary>
     [fsObject]
@@ -389,7 +389,7 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
     }
 
     /// <summary>
-    /// A list of Word conversion settings, including the conversions applied to different types of headings as 
+    /// A list of Word conversion settings, including the conversions applied to different types of headings as
     /// defined by font attributes and to different formatting styles of text.
     /// </summary>
     [fsObject]
@@ -402,8 +402,8 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
     }
 
     /// <summary>
-    /// A list of HTML conversion settings, including tags that are to be excluded completely; tags that are to be 
-    /// discarded but their content kept; content that is to be excluded as defined by xpaths; content that is to 
+    /// A list of HTML conversion settings, including tags that are to be excluded completely; tags that are to be
+    /// discarded but their content kept; content that is to be excluded as defined by xpaths; content that is to
     /// be kept as defined by xpaths; and tag attributes that are to be excluded.
     /// </summary>
     [fsObject]
@@ -446,8 +446,8 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         /// </summary>
         public string description { get; set; }
         /// <summary>
-        /// Field where enrichments will be stored. This field must already exist or be at most 1 level deeper 
-        /// than an existing field. For example, if text is a top-level field with no sub-fields, text.foo is a 
+        /// Field where enrichments will be stored. This field must already exist or be at most 1 level deeper
+        /// than an existing field. For example, if text is a top-level field with no sub-fields, text.foo is a
         /// valid destination but text.foo.bar is not.
         /// </summary>
         public string destination_field { get; set; }
@@ -464,7 +464,7 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         /// </summary>
         public string enrichment { get; set; }
         /// <summary>
-        /// If true, then most errors generated during the enrichment process will be treated as warnings and 
+        /// If true, then most errors generated during the enrichment process will be treated as warnings and
         /// will not cause the document to fail processing.
         /// </summary>
         public bool ignore_downstream_errors { get; set; }
@@ -482,27 +482,27 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
     {
         /// <summary>
         /// Identifies what type of operation to perform.
-        /// 
-        /// copy - Copies the value of the source_field to the destination_field field. If the destination_field 
+        ///
+        /// copy - Copies the value of the source_field to the destination_field field. If the destination_field
         /// already exists, then the value of the source_field overwrites the original value of the destination_field.
-        /// 
-        /// move - Renames(moves) the source_field to the destination_field. If the destination_field already exists, 
-        /// then the value of the source_field overwrites the original value of the destination_field. Rename is 
-        /// identical to copy, except that the source_field is removed after the value has been copied to the 
+        ///
+        /// move - Renames(moves) the source_field to the destination_field. If the destination_field already exists,
+        /// then the value of the source_field overwrites the original value of the destination_field. Rename is
+        /// identical to copy, except that the source_field is removed after the value has been copied to the
         /// destination_field(it is the same as a copy followed by a remove).
-        /// 
-        /// merge - Merges the value of the source_field with the value of the destination_field. The 
-        /// destination_field is converted into an array if it is not already an array, and the value of the 
-        /// source_field is appended to the array. This operation removes the source_field after the merge. If the 
-        /// source_field does not exist in the current document, then the destination_field is still converted into 
-        /// an array (if it is not an array already). This is ensures the type for destination_field is consistent 
+        ///
+        /// merge - Merges the value of the source_field with the value of the destination_field. The
+        /// destination_field is converted into an array if it is not already an array, and the value of the
+        /// source_field is appended to the array. This operation removes the source_field after the merge. If the
+        /// source_field does not exist in the current document, then the destination_field is still converted into
+        /// an array (if it is not an array already). This is ensures the type for destination_field is consistent
         /// across all documents.
-        /// 
+        ///
         /// remove - Deletes the source_field field. The destination_field is ignored for this operation.
-        /// 
-        /// remove_nulls - Removes all nested null (blank) leif values from the JSON tree. source_field and 
-        /// destination_field are ignored by this operation because remove_nulls operates on the entire JSON tree. 
-        /// Typically, remove_nulls is invoked as the last normalization operation (if it is inoked at all, it can 
+        ///
+        /// remove_nulls - Removes all nested null (blank) leif values from the JSON tree. source_field and
+        /// destination_field are ignored by this operation because remove_nulls operates on the entire JSON tree.
+        /// Typically, remove_nulls is invoked as the last normalization operation (if it is inoked at all, it can
         /// be time-expensive). = ['copy', 'move', 'merge', 'remove', 'remove_nulls']
         /// string Enum: "copy", "move", "merge", "remove", "remove_nulls"
         /// </summary>
@@ -518,7 +518,7 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
     }
 
     /// <summary>
-    /// PDF conversion settings, including the conversions applied to different types of headings as defined by 
+    /// PDF conversion settings, including the conversions applied to different types of headings as defined by
     /// font attributes.
     /// </summary>
     [fsObject]
@@ -531,7 +531,7 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
     }
 
     /// <summary>
-    /// Word conversion settings, including the conversions applied to different types of headings as defined by 
+    /// Word conversion settings, including the conversions applied to different types of headings as defined by
     /// font attributes and to different formatting styles of text.
     /// </summary>
     [fsObject]
@@ -566,9 +566,9 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
     public class EnrichmentOptions
     {
         /// <summary>
-        ///  A comma sepeated list of analyses that should be applied when using the alchemy_language enrichment. 
+        ///  A comma sepeated list of analyses that should be applied when using the alchemy_language enrichment.
         ///  See the the service documentation for details on each extract option.
-        ///  Possible values include: entity, keyword, taxonomy, concept, relation, doc-sentiment, doc-emotion, 
+        ///  Possible values include: entity, keyword, taxonomy, concept, relation, doc-sentiment, doc-emotion,
         ///  typed-rels
         /// </summary>
         public string extract { get; set; }
@@ -589,17 +589,17 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
         /// </summary>
         public bool hierarchicalTypedRelations { get; set; }
         /// <summary>
-        ///  Required when using the typed-rel extract option. Should be set to the ID of a previously published 
+        ///  Required when using the typed-rel extract option. Should be set to the ID of a previously published
         ///  custom Watson Knowledge Studio model
         /// </summary>
         public string model { get; set; }
         /// <summary>
-        /// If provided, then do not attempt to detect the language of the input document. Instead, assume the 
-        /// language is the one specified in this field. You can set this property to work around 
-        /// unsupported-text-language errors. Supported languages include English, German, French, Italian, 
-        /// Portuguese, Russian, Spanish and Swedish.Supported language codes are the ISO-639-1, ISO-639-2, 
-        /// ISO-639-3, and the plain english name of the language (e.g. "russian"). = ['english', 'german', 
-        /// 'french', 'italian', 'portuguese', 'russian', 'spanish', 'swedish', 'en', 'eng', 'de', 'ger', 'deu', 
+        /// If provided, then do not attempt to detect the language of the input document. Instead, assume the
+        /// language is the one specified in this field. You can set this property to work around
+        /// unsupported-text-language errors. Supported languages include English, German, French, Italian,
+        /// Portuguese, Russian, Spanish and Swedish.Supported language codes are the ISO-639-1, ISO-639-2,
+        /// ISO-639-3, and the plain english name of the language (e.g. "russian"). = ['english', 'german',
+        /// 'french', 'italian', 'portuguese', 'russian', 'spanish', 'swedish', 'en', 'eng', 'de', 'ger', 'deu',
         /// 'fr', 'fre', 'fra', 'it', 'ita', 'pt', 'por', 'ru', 'rus', 'es', 'spa', 'sv', 'swe']
         /// </summary>
         public string language { get; set; }
@@ -654,7 +654,7 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
     }
 
     /// <summary>
-    /// The configuration ID and the status of the delete operation, and a warning if the configuration was 
+    /// The configuration ID and the status of the delete operation, and a warning if the configuration was
     /// referenced by anything.
     /// </summary>
     [fsObject]
@@ -677,7 +677,7 @@ namespace IBM.Watson.DeveloperCloud.Services.Discovery.v1
 
     #region Collections
     /// <summary>
-    /// An array that lists each collection's ID, name, configuration ID, language, status, creation date, and date 
+    /// An array that lists each collection's ID, name, configuration ID, language, status, creation date, and date
     /// of last update.
     /// </summary>
     [fsObject]

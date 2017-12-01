@@ -60,7 +60,7 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
     /// </summary>
     public string sessions { get; set; }
     /// <summary>
-    /// Describes the additional service features supported with the model. 
+    /// Describes the additional service features supported with the model.
     /// </summary>
     public SupportedFeatures supported_features { get; set; }
     /// <summary>
@@ -90,15 +90,15 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
   public class Session
   {
     /// <summary>
-    /// Describes the additional service features supported with the model. 
+    /// Describes the additional service features supported with the model.
     /// </summary>
     public string session_id { get; set; }
     /// <summary>
-    /// Describes the additional service features supported with the model. 
+    /// Describes the additional service features supported with the model.
     /// </summary>
     public string new_session_uri { get; set; }
     /// <summary>
-    /// URI for REST recognition requests. 
+    /// URI for REST recognition requests.
     /// </summary>
     public string recognize { get; set; }
     /// <summary>
@@ -122,7 +122,7 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
     /// </summary>
     public SpeechRecognitionResult[] results { get; set; }
     /// <summary>
-    /// An index that indicates the change point in the results array. 
+    /// An index that indicates the change point in the results array.
     /// </summary>
     public int result_index { get; set; }
     /// <summary>
@@ -163,11 +163,11 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
   public class SpeechRecognitionResult
   {
     /// <summary>
-    /// If true, the result for this utterance is not updated further. 
+    /// If true, the result for this utterance is not updated further.
     /// </summary>
     public bool final { get; set; }
     /// <summary>
-    /// Array of alternative transcripts. 
+    /// Array of alternative transcripts.
     /// </summary>
     public SpeechRecognitionAlternative[] alternatives { get; set; }
     /// <summary>
@@ -187,7 +187,7 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
   public class SpeechRecognitionAlternative
   {
     /// <summary>
-    /// Transcription of the audio. 
+    /// Transcription of the audio.
     /// </summary>
     public string transcript { get; set; }
 
@@ -196,7 +196,7 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
     /// </summary>
     public double confidence { get; set; }
     /// <summary>
-    /// Time alignments for each word from transcript as a list of lists. Each inner list consists of three elements: the word followed by its start and end time in seconds. Example: [["hello",0.0,1.2],["world",1.2,2.5]]. Available only for the best alternative. 
+    /// Time alignments for each word from transcript as a list of lists. Each inner list consists of three elements: the word followed by its start and end time in seconds. Example: [["hello",0.0,1.2],["world",1.2,2.5]]. Available only for the best alternative.
     /// </summary>
     public string[] timestamps { get; set; }
     /// <summary>
@@ -232,15 +232,15 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
   public class WordAlternativeResults
   {
     /// <summary>
-    /// Specified keyword normalized to the spoken phrase that matched in the audio input. 
+    /// Specified keyword normalized to the spoken phrase that matched in the audio input.
     /// </summary>
     public double start_time { get; set; }
     /// <summary>
-    /// Specified keyword normalized to the spoken phrase that matched in the audio input. 
+    /// Specified keyword normalized to the spoken phrase that matched in the audio input.
     /// </summary>
     public double end_time { get; set; }
     /// <summary>
-    /// Specified keyword normalized to the spoken phrase that matched in the audio input. 
+    /// Specified keyword normalized to the spoken phrase that matched in the audio input.
     /// </summary>
     public WordAlternativeResult[] alternatives { get; set; }
   }
@@ -252,7 +252,7 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
   public class KeywordResult
   {
     /// <summary>
-    /// Specified keyword normalized to the spoken phrase that matched in the audio input. 
+    /// Specified keyword normalized to the spoken phrase that matched in the audio input.
     /// </summary>
     public string normalized_text { get; set; }
     /// <summary>
@@ -260,7 +260,7 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
     /// </summary>
     public double start_time { get; set; }
     /// <summary>
-    /// End time in seconds of the keyword match. 
+    /// End time in seconds of the keyword match.
     /// </summary>
     public double end_time { get; set; }
     /// <summary>
@@ -276,7 +276,7 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
   public class WordAlternativeResult
   {
     /// <summary>
-    /// Confidence score of the word alternative hypothesis. 
+    /// Confidence score of the word alternative hypothesis.
     /// </summary>
     public double confidence { get; set; }
     /// <summary>
@@ -304,19 +304,19 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
   public class SessionStatus
   {
     /// <summary>
-    /// State of the session. The state must be initialized to perform a new recognition request on the session. 
+    /// State of the session. The state must be initialized to perform a new recognition request on the session.
     /// </summary>
     public string state { get; set; }
     /// <summary>
-    /// URI for information about the model that is used with the session. 
+    /// URI for information about the model that is used with the session.
     /// </summary>
     public string model { get; set; }
     /// <summary>
-    /// URI for REST recognition requests. 
+    /// URI for REST recognition requests.
     /// </summary>
     public string recognize { get; set; }
     /// <summary>
-    /// URI for REST results observers. 
+    /// URI for REST results observers.
     /// </summary>
     public string observe_result { get; set; }
     /// <summary>
@@ -368,7 +368,7 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
   public class RegisterStatus
   {
     /// <summary>
-    /// The current status of the job: created if the callback URL was successfully white-listed as a result of the call or already created if the URL was already white-listed. 
+    /// The current status of the job: created if the callback URL was successfully white-listed as a result of the call or already created if the URL was already white-listed.
     /// </summary>
     public string status { get; set; }
     /// <summary>
@@ -383,7 +383,7 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
   public class JobsStatusList
   {
     /// <summary>
-    /// The current status of the job: created if the callback URL was successfully white-listed as a result of the call or already created if the URL was already white-listed. 
+    /// The current status of the job: created if the callback URL was successfully white-listed as a result of the call or already created if the URL was already white-listed.
     /// </summary>
     public JobStatus[] recognitions { get; set; }
   }
@@ -394,19 +394,19 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
   public class JobStatus
   {
     /// <summary>
-    /// The ID of the job. 
+    /// The ID of the job.
     /// </summary>
     public string id { get; set; }
     /// <summary>
-    /// The date and time in Coordinated Universal Time (UTC) at which the job was created. The value is provided in full ISO 8601 format (YYYY-MM-DDThh:mm:ss.sTZD).  
+    /// The date and time in Coordinated Universal Time (UTC) at which the job was created. The value is provided in full ISO 8601 format (YYYY-MM-DDThh:mm:ss.sTZD).
     /// </summary>
     public string created { get; set; }
     /// <summary>
-    /// The date and time in Coordinated Universal Time (UTC) at which the job was last updated by the service. The value is provided in full ISO 8601 format (YYYY-MM-DDThh:mm:ss.sTZD). 
+    /// The date and time in Coordinated Universal Time (UTC) at which the job was last updated by the service. The value is provided in full ISO 8601 format (YYYY-MM-DDThh:mm:ss.sTZD).
     /// </summary>
     public string updated { get; set; }
     /// <summary>
-    /// The current status of the job. waiting: The service is preparing the job for processing; the service always returns this status when the job is initially created or when it is waiting for capacity to process the job. processing: The service is actively processing the job. completed: The service has finished processing the job; if the job specified a callback URL and the event recognitions.completed_with_results, the service sent the results with the callback notification; otherwise, use the GET /v1/recognitions/{id} method to retrieve the results. failed: The job failed. 
+    /// The current status of the job. waiting: The service is preparing the job for processing; the service always returns this status when the job is initially created or when it is waiting for capacity to process the job. processing: The service is actively processing the job. completed: The service has finished processing the job; if the job specified a callback URL and the event recognitions.completed_with_results, the service sent the results with the callback notification; otherwise, use the GET /v1/recognitions/{id} method to retrieve the results. failed: The job failed.
     /// </summary>
     public string status { get; set; }
     /// <summary>
@@ -421,7 +421,7 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
   public class JobStatusNew
   {
     /// <summary>
-    /// The date and time in Coordinated Universal Time (UTC) at which the job was created. The value is provided in full ISO 8601 format (YYYY-MM-DDThh:mm:ss.sTZD). 
+    /// The date and time in Coordinated Universal Time (UTC) at which the job was created. The value is provided in full ISO 8601 format (YYYY-MM-DDThh:mm:ss.sTZD).
     /// </summary>
     public string created { get; set; }
     /// <summary>
@@ -457,7 +457,7 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
   public class Customization
   {
     /// <summary>
-    /// The GUID of the custom language model. 
+    /// The GUID of the custom language model.
     /// </summary>
     public string customization_id { get; set; }
     /// <summary>
@@ -465,7 +465,7 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
     /// </summary>
     public string created { get; set; }
     /// <summary>
-    /// The language of the custom language model. Currently, only en-US is supported. 
+    /// The language of the custom language model. Currently, only en-US is supported.
     /// </summary>
     public string language { get; set; }
     /// <summary>
@@ -473,7 +473,7 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
     /// </summary>
     public string owner { get; set; }
     /// <summary>
-    /// The name of the custom language model. 
+    /// The name of the custom language model.
     /// </summary>
     public string name { get; set; }
     /// <summary>
@@ -489,7 +489,7 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
     /// </summary>
     public string status { get; set; }
     /// <summary>
-    /// A percentage that indicates the progress of the model's current training. A value of 100 means that the model is fully trained. For this beta release, the progress field does not reflect the current progress of the training; the field changes from 0 to 100 when training is complete. 
+    /// A percentage that indicates the progress of the model's current training. A value of 100 means that the model is fully trained. For this beta release, the progress field does not reflect the current progress of the training; the field changes from 0 to 100 when training is complete.
     /// </summary>
     public int progress { get; set; }
     /// <summary>
@@ -605,11 +605,11 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
   public class WordData
   {
     /// <summary>
-    /// A custom word from the custom model. The spelling of the word is used to train the model. 
+    /// A custom word from the custom model. The spelling of the word is used to train the model.
     /// </summary>
     public string word { get; set; }
     /// <summary>
-    /// An array of pronunciations for the custom word. The array can include the sounds-like pronunciation automatically generated by the service if none is provided for the word; the service adds this pronunciation when it finishes pre-processing the word. 
+    /// An array of pronunciations for the custom word. The array can include the sounds-like pronunciation automatically generated by the service if none is provided for the word; the service adds this pronunciation when it finishes pre-processing the word.
     /// </summary>
     public string[] sounds_like { get; set; }
     /// <summary>
@@ -617,7 +617,7 @@ namespace IBM.Watson.DeveloperCloud.Services.SpeechToText.v1
     /// </summary>
     public string display_as { get; set; }
     /// <summary>
-    /// An array of sources that describes how the word was added to the custom model's words resource. For OOV words added from a corpus, includes the name of the corpus; if the word was added by multiple corpora, the names of all corpora are listed. If the word was modified or added by the user directly, the field includes the string user. 
+    /// An array of sources that describes how the word was added to the custom model's words resource. For OOV words added from a corpus, includes the name of the corpus; if the word was added by multiple corpora, the names of all corpora are listed. If the word was modified or added by the user directly, the field includes the string user.
     /// </summary>
     public string[] source { get; set; }
     /// <summary>

@@ -227,7 +227,7 @@ namespace IBM.Watson.DeveloperCloud.Connection
     #endregion
 
     /// <summary>
-    /// This function returns a RESTConnector object for the given service and function. 
+    /// This function returns a RESTConnector object for the given service and function.
     /// </summary>
     /// <param name="serviceID">The ID of the service.</param>
     /// <param name="function">The name of the function.</param>

@@ -1145,7 +1145,7 @@ namespace WebSocketSharp.Net
     {
       return UrlEncode (s, Encoding.UTF8);
     }
-  
+
     public static string UrlEncode (string s, Encoding encoding)
     {
       int len;
@@ -1175,7 +1175,7 @@ namespace WebSocketSharp.Net
 
       return Encoding.ASCII.GetString (InternalUrlEncodeToBytes (bytes, 0, realLen));
     }
-  
+
     public static string UrlEncode (byte[] bytes, int offset, int count)
     {
       var encoded = UrlEncodeToBytes (bytes, offset, count);

@@ -223,7 +223,7 @@ namespace IBM.Watson.DeveloperCloud.Utilities
     }
 
     /// <summary>
-    /// Invoking this function will start the co-routine to load the configuration. The user should check the 
+    /// Invoking this function will start the co-routine to load the configuration. The user should check the
     /// ConfigLoaded property to check when the configuration is actually loaded.
     /// </summary>
     public void LoadConfig()

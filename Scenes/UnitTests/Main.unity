@@ -3,7 +3,7 @@
 --- !u!29 &1
 SceneSettings:
   m_ObjectHideFlags: 0
-  m_PVSData: 
+  m_PVSData:
   m_PVSObjectsArray: []
   m_PVSPortalsArray: []
   m_OcclusionBakeSettings:
@@ -135,7 +135,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11482954, guid: 18d6f509dac7d89419df972e1daa5d9b, type: 2}
       propertyPath: layers.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 204989906}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 18d6f509dac7d89419df972e1daa5d9b, type: 2}

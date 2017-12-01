@@ -83,7 +83,7 @@ namespace WebSocketSharp.Server
         return _websocket != null ? _websocket.Log : null;
       }
     }
-    
+
     /// <summary>
     /// Gets the access to the sessions in the WebSocket service.
     /// </summary>

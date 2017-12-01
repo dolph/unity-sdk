@@ -27,8 +27,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -60,8 +60,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78af66a3ff7f21c4f90357d75ed92108, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_DestroyTime: 5
   m_AlphaFade: 1
   m_FadeTime: 1
@@ -98,7 +98,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: m_AlphaTarget
-      value: 
+      value:
       objectReference: {fileID: 11410738}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

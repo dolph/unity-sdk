@@ -19,7 +19,7 @@ using IBM.Watson.DeveloperCloud.DataTypes;
 using UnityEngine;
 using UnityEngine.UI;
 
-#pragma warning disable 414          
+#pragma warning disable 414
 
 namespace IBM.Watson.DeveloperCloud.Widgets
 {

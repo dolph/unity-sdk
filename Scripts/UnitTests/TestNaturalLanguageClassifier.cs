@@ -67,7 +67,7 @@ namespace IBM.Watson.DeveloperCloud.UnitTests
             if ( !string.IsNullOrEmpty( m_ClassifierId ) )
             {
                 Test( m_NaturalLanguageClassifier.DeleteClassifer( m_ClassifierId, OnDeleteClassifier ) );
-                while(! m_DeleteTested ) 
+                while(! m_DeleteTested )
                     yield return null;
             }
 #endif

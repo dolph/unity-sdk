@@ -500,7 +500,7 @@ public struct Model {
     }
 
     // note: We still should have a default constructor, but since we're a
-    // struct one is automatically created for us      
+    // struct one is automatically created for us
 }
 ```
 

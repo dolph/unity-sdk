@@ -117,7 +117,7 @@ namespace IBM.Watson.DeveloperCloud.Utilities
 
         Runnable.Instance.m_Routines[ID] = this;
 #if ENABLE_RUNNABLE_DEBUGGING
-                Debug.Log( string.Format("Coroutine {0} started.", ID ) ); 
+                Debug.Log( string.Format("Coroutine {0} started.", ID ) );
 #endif
       }
 
